@@ -1,0 +1,36 @@
+//class
+
+import 'dart:io';
+
+class Marks {
+  int? maths;
+  int? physics;
+  int? computer;
+  int? sum;
+  double? avg;
+
+
+  void Sum(int maths, int physics, int computer) {
+    sum = maths + physics + computer;
+    print("Sum: $sum");
+  }
+
+  void Avg(int maths, int physics, int computer) {
+    avg = ((maths + physics + computer) / 3);
+    print("Average : $avg");
+  }
+}
+
+//main
+
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  Marks value = Marks();
+  value.Sum(20, 30, 30);
+  value.Avg(20, 30, 30);
+
+
+  print("");
+}
