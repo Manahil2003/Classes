@@ -1,0 +1,27 @@
+//Class
+
+import 'dart:io';
+
+class theta {
+  int a=100;
+  int b=100;
+  late double avg;
+
+  void Avg(){
+avg=(a+b)/2;
+print("Average : $avg"); 
+  }
+}
+
+//main
+
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  theta value = theta();
+
+  value.Avg();
+
+  print("");
+}
