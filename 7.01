@@ -1,0 +1,29 @@
+//Class
+
+import 'dart:io';
+
+class inp_out {
+  int? inp;
+
+  Input(inp) {
+    this.inp = inp;
+  }
+
+  void Out() {
+    print("Output: $inp");
+  }
+}
+
+//main function
+
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  inp_out value = inp_out();
+  value.Input(30);
+  print("");
+  value.Out();
+
+  print("");
+}
