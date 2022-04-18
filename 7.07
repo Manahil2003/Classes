@@ -1,0 +1,22 @@
+//Class
+
+import 'dart:io';
+
+class fun {
+  void display() {
+    print("This is me..");
+  }
+}
+
+//main
+
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  fun value = fun();
+
+  value.display();
+
+  print("");
+}
