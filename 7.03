@@ -1,0 +1,33 @@
+//Class
+
+import 'dart:io';
+
+class Circle {
+  double? radius;
+  double pi = 3.17;
+  double? area;
+  double? cicumference;
+
+  void Area(int radius) {
+    area = pi * radius * radius;
+    print("Area: $area");
+  }
+
+  void Circum(int radius) {
+    cicumference = 2 * pi * radius;
+    print("Circumference: $cicumference");
+  }
+}
+
+//main
+
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  Circle value = Circle();
+  value.Area(20);
+  value.Circum(20);
+
+  print("");
+}
