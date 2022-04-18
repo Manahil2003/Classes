@@ -1,0 +1,32 @@
+// Class
+
+import 'dart:io';
+
+class Book {
+  int? BookID;
+  int? Pages;
+  int? Price;
+
+  get(BookID, Pages, Price) {
+    this.BookID = BookID;
+    this.Pages = Pages;
+    this.Price = Price;
+  }
+
+  void price() {
+    print(Price);
+  }
+}
+
+//main
+
+import 'person.dart';
+import 'dart:io';
+
+main() {
+  Book value = Book();
+  value.get(100, 200, 300);
+  value.price();
+
+  print("");
+}
